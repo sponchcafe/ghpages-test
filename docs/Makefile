@@ -24,6 +24,7 @@ help:
 
 gh-pages:	
 	git checkout gh-pages
+	cd docs
 	rm -rf build _sources _static
 	git checkout master $(GH_PAGES_SOURCES)
 	git reset HEAD
